@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: #020410; */
+    background:linear-gradient(to right,darkblue,rgb(5, 240, 248));
+    /*background: black;*/
+}
+
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    flex-wrap: wrap;
+    /*background-color: rgba(0, 0, 0, 0.034);
+    background: black;*/
+    background:linear-gradient(to right,darkblue,rgb(5, 240, 248));
+
+}
+
+header .ecole {
+    color: #e4e4e4;
+}
+
+header .header-title {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+header p:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px 10px;
+    transition: .5s;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 80vh;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    /* background: url(yaser_1.jpg); */
+    /* background-image: url(hiba.jpg); */
+    background:linear-gradient(to right,darkblue,rgb(5, 240, 248));
+
+    /*background: url(pexels-david-besh-884788.jpg);*/
+    /*background: rgba(235, 230, 230, 0.171);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: red; */
+}
+
+.content {
+    width: 58%;
+    padding: 40px;
+    color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: #333; */
+}
+
+
+.content h2 span{
+    /* background: red; */
+    padding-bottom: 70px;
+}
+
+
+.body_1 {
+    margin: auto 0;
+    width: calc(100% -58%);
+    height: 500px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+}
+
+.wrap h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 15px 45px 15px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.remeber-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.remeber-forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remeber-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remeber-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.content .logo {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.text-sci h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.text-sci h2 span {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content .text-sci p {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.socail-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.socail-icons a i {
+    font-size: 22px;
+    color: #e4e4e4;
+    margin: 0 10px;
+    transition: 0.5s ease;
+}
+
+.socail-icons a i:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .content, .body_1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        margin: 0 10px 10px;
+    }
+
+    .container {
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .socail-icons{
+        position: absolute;
+        z-index: 1000;
+        bottom: 65px;
+        left: 38%;
+        right: 38%;
+    }
+    .container .content , .body_1{
+        width: 100%;
+    }
+
+    .wrap {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: #e4e4e4; */
+    }
+
+    .header .navbar{
+        height: 97px;
+        width: 100%;
+        position :absolute;
+        top: 60px;
+    }
+    .navbar a{
+        width: 20%;
+        padding:  0 7px;
+        /* background: red; */
+    }
+    
+    .navbar a::after {
+        top: 30px;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 80%;
+        height: 2px;
+        background: #e4e4e4;
+        border-radius: 5px;
+        transform: translateY(10px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+}
